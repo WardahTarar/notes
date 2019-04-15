@@ -1,9 +1,9 @@
 (function(exports) {
 
-  function NoteModel() {
+  function Note() {
     this.text = "My favourite language is JavaScript"
   }
 
-  exports.NoteModel = NoteModel
+  exports.Note = Note
 })(this)
 

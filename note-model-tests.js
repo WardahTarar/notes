@@ -1,7 +1,7 @@
 (function(exports) {
   function testingJStext() {
-    var notemodel = new NoteModel();
-    assert.isTrue(notemodel.text === "My favourite language is JavaScript")
+    var note = new Note()
+    assert.isTrue(note.text === "My favourite language is JavaScript")
   }
   testingJStext()
 })(this)

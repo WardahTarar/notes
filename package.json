@@ -1,0 +1,25 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "my amazing notes app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WardahTarar/notes.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "Wardah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WardahTarar/notes/issues"
+  },
+  "homepage": "https://github.com/WardahTarar/notes#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

@@ -4,9 +4,16 @@
     this.array = []
 
     NoteList.prototype.view = function() {
-      this.note = new Note()
-      this.array.push(this.note)
+      note = new Note()
+      this.array.push(note)
       return this.array
+    }
+
+    NoteList.prototype.create = function(string) {
+      note = new Note()
+      note.text = string
+      this.array.push(note)
+      return note
     }
   }
   

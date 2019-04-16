@@ -19,3 +19,20 @@
   
 //   exports.NoteList = NoteList
 // })(this)
+
+
+(function(exports) {
+
+  function NoteList() {
+    this._array = []
+
+   NoteList.prototype.all = function() {
+      return this._array
+   }
+   NoteList.prototype.create = function(string) {
+     note = new Note(string)
+     this._array.push(note)
+   }
+  }
+  exports.NoteList = NoteList
+})(this)

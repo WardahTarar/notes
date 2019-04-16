@@ -4,6 +4,9 @@
     this.text = string
   }
 
+  Note.prototype.getText = function() {
+    return this.text
+  }
   exports.Note = Note
 })(this)
 

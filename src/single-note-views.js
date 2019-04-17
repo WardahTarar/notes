@@ -5,8 +5,7 @@
   }
 
   NoteViewer.prototype.display = function() {
-    x = "<div>" + this._note.getText() + "</div>"
-    return x 
+    return "<div>" + this._note.getText() + "</div>"
   }
   exports.NoteViewer = NoteViewer
 })(this)

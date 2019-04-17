@@ -11,9 +11,8 @@
   // }
   // checksController()
 
-
   function checksControllerwithDoubles(){
-    var description = "checks controller test woth doubles"
+    var description = "checks controller test with doubles"
 
     function NoteDouble(text) {
       this.text = text
@@ -26,22 +25,20 @@
     var note = new NoteDouble("please work!!")
 
     function NoteListDouble() {}
-
     NoteListDouble.prototype.all = function() {
       return [note]
-
     }
 
+    function element() {
+      this.innerHtml = ""
+    }
 
     var notelist = new NoteListDouble()
-    
     var controller = new NoteController(notelist)
     
-    var newHTML = controller.displayNotes()
-   
+    var newHTML = controller.displayNotes(element)
     assert.isTrue(newHTML === "<ul><li><div>please work!!</div></li></ul>", description)
-   
-
   }
+
   checksControllerwithDoubles()
 })(this)

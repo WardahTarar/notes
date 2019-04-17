@@ -5,9 +5,8 @@
     this._notelistView = new NoteListView(this._notelist)
   }
 
-  NoteController.prototype.displayNotes = function(){
-    var app = document.getElementById("app")
-    return app.innerHTML = this._notelistView.getHTML()
+  NoteController.prototype.displayNotes = function(element = document.getElementById("app") ){
+    return element.innerHTML = this._notelistView.getHTML()
   }
 
   exports.NoteController = NoteController

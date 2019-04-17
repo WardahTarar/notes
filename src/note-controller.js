@@ -2,8 +2,6 @@
 
   function NoteController(notelist) {
     this._notelist = notelist
-    // this._notelist.create("hello JS")
-    // this._notelist.create("i miss ruby")
     this._notelistView = new NoteListView(this._notelist)
   }
 

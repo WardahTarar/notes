@@ -10,11 +10,12 @@
     }
 
     var output = ""
+    var id = 0
     this._notelist.all().forEach(function(note) {
-      output = output + "<li><div>" + note.getText().substr(0,20)+ "</div></li>"
+      output = output + "<li><div>" + id + ". " + note.getText().substr(0,20)+ "</div></li>"
+      id += 1
     })
-    // console.log("<ul>" + output + "</ul>")
-
+    
     return "<ul>" + output + "</ul>"
   }
 

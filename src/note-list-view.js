@@ -11,7 +11,7 @@
 
     var html = ""
     this._notelist.all().forEach(function(note) {
-      html += "<a href='#notes/"+note.id+"'>"+note.getText().substr(0,20)+ "</a>"
+      html += "<li><a href='#notes/"+note.id+"'>"+note.getText().substr(0,20)+ "</a></li>"
     
     })
     return "<ul>" + html + "</ul>"

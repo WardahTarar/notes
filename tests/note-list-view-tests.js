@@ -6,7 +6,7 @@
     var notelistView = new NoteListView(notelist)
 
     htmlString = notelistView.getHTML()
-    assert.isTrue(htmlString === "<ul><a href='#notes/8'>Hello JS</a></ul>", description)
+    assert.isTrue(htmlString === "<ul><li><a href='#notes/8'>Hello JS</a></li></ul>", description)
   }
   returnsHTMLStringForOneNote()
 
@@ -18,7 +18,8 @@
     var notelistView = new NoteListView(notelist)
 
     htmlString = notelistView.getHTML()
-    assert.isTrue(htmlString === "<ul><a href='#notes/9'>Note 1</a><a href='#notes/10'>Note 2</a></ul>", description)
+    console.log(htmlString)
+    assert.isTrue(htmlString === "<ul><li><a href='#notes/9'>Note 1</a></li><li><a href='#notes/10'>Note 2</a></li></ul>", description)
   }
   returnsHTMLstringForThreeNotes()
 
@@ -39,7 +40,7 @@
     var notelistView = new NoteListView(notelist)
 
     htmlString = notelistView.getHTML()
-    assert.isTrue(htmlString === "<ul><a href='#notes/11'>I am loving Makers A</a></ul>", description)
+    assert.isTrue(htmlString === "<ul><li><a href='#notes/11'>I am loving Makers A</a></li></ul>", description)
   }
   returningFirst20chars()
 
@@ -50,7 +51,7 @@
     var notelistView = new NoteListView(notelist)
 
     htmlString = notelistView.getHTML()
-    assert.isTrue(htmlString === "<ul><a href='#notes/12'>I am loving Makers A</a></ul>", description)
+    assert.isTrue(htmlString === "<ul><li><a href='#notes/12'>I am loving Makers A</a></li></ul>", description)
   }
   linksEachNoteToURL()
 

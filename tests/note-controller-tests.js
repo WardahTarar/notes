@@ -37,7 +37,7 @@
     var controller = new NoteController(notelist)
     
     var newHTML = controller.displayNotes(element)
-    assert.isTrue(newHTML === "<ul><a href='#notes/undefined'>Testing doubles!!</a></ul>", description)
+    assert.isTrue(newHTML === "<ul><li><a href='#notes/undefined'>Testing doubles!!</a></li></ul>", description)
   }
 
   checksControllerwithDoubles()

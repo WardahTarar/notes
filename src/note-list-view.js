@@ -9,12 +9,12 @@
       return ""
     }
 
-    var output = ""
+    var html = ""
     this._notelist.all().forEach(function(note) {
-      output = output + "<li><div>" + note.getText().substr(0,20)+ "</div></li>"
-
+      html += "<a href='#notes/"+note.id+"'>"+note.getText().substr(0,20)+ "</a>"
+    
     })
-    return "<ul>" + output + "</ul>"
+    return "<ul>" + html + "</ul>"
   }
 
   

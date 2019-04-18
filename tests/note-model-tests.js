@@ -13,5 +13,15 @@
   }
   testingNoteContent()
 
+  function returnsUniqueIDwithNotes(){
+    var description = "returns unique ID with each note"
+    var note1 = new Note("I am loving Makers Academy")
+    var note2 = new Note("I am learning JavaScipt")
+
+    assert.isTrue(note1.id) === 0
+    assert.isTrue(note1.id) === 1
+  }
+  returnsUniqueIDwithNotes()
+
 })(this)
 

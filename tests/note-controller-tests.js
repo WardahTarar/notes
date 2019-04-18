@@ -22,7 +22,7 @@
       return this.text
     }
 
-    var note = new NoteDouble("please work!!")
+    var note = new NoteDouble("Testing doubles!!")
 
     function NoteListDouble() {}
     NoteListDouble.prototype.all = function() {
@@ -37,7 +37,8 @@
     var controller = new NoteController(notelist)
     
     var newHTML = controller.displayNotes(element)
-    assert.isTrue(newHTML === "<ul><li><div>0. please work!!</div></li></ul>", description)
+    console.log(newHTML)
+    assert.isTrue(newHTML === "<ul><li><div>Testing doubles!!</div></li></ul>", description)
   }
 
   checksControllerwithDoubles()
